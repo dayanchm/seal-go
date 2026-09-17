@@ -5,3 +5,5 @@ import {main} from '../models';
 export function AnalyzeProject(arg1:string):Promise<Array<main.Finding>>;
 
 export function SelectFolder():Promise<string>;
+
+export function SelectGoFile():Promise<string>;

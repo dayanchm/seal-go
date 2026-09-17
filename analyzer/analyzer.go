@@ -12,6 +12,5 @@ var Analyzer = &analysis.Analyzer{
 
 func run(pass *analysis.Pass) (interface{}, error) {
 	checkHTTPResponseBody(pass)
-
 	return nil, nil
 }
