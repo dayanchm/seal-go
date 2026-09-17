@@ -1,4 +1,4 @@
-# Cleanupcheck
+# seal-go
 
 ## Goal
 
@@ -45,4 +45,4 @@ This change does not improve the existing Close() detection logic. Early returns
 
 ## License 
 
-cleanupcheck is open-source software licensed under the MIT License.
+seal-go is open-source software licensed under the MIT License.

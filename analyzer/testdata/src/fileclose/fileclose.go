@@ -3,7 +3,7 @@ package fileclose
 import "os"
 
 func missingClose() error {
-	f, err := os.Open("example.txt") // want  `file "f" is not closed`
+	f, err := os.Open("example.txt") // want `file "f" is not closed`
 	if err != nil {
 		return err
 	}

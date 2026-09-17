@@ -3,8 +3,8 @@ package analyzer_test
 import (
 	"testing"
 
-	"cleanupcheck/analyzer"
 	"golang.org/x/tools/go/analysis/analysistest"
+	"seal-go/analyzer"
 )
 
 func TestHTTPResponseBody(t *testing.T) {

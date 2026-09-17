@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cleanupcheck/analyzer"
+	"seal-go/analyzer"
 
 	"golang.org/x/tools/go/analysis/singlechecker"
 )

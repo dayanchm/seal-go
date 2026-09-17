@@ -1,13 +1,13 @@
 import './style.css';
 import { SelectFolder, SelectGoFile, AnalyzeProject } from '../wailsjs/go/main/App';
 document.documentElement.lang = 'en';
-document.title = 'Cleanupcheck';
+document.title = 'seal-go';
 
 // Restore the appearance before rendering the interface.
 type Theme = 'dark' | 'light';
 let theme: Theme = 'dark';
 try {
-  const saved = localStorage.getItem('cleanupcheck.theme');
+  const saved = localStorage.getItem('seal-go.theme');
   if (saved === 'light' || saved === 'dark') theme = saved;
 } catch {
   // The theme still works when persistent storage is unavailable.
@@ -21,7 +21,7 @@ document.documentElement.dataset.theme = theme;
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="workspace">
     <aside class="sidebar" aria-label="Workspace">
-      <div class="brand">cleanupcheck<span class="edition">desktop</span></div>
+      <div class="brand">seal-go<span class="edition">desktop</span></div>
       <div class="sidebar-section">Workspace</div>
       <a class="nav-item active" href="#analysis" aria-current="page">Analysis <span aria-hidden="true">↗</span></a>
       <div class="sidebar-project">
@@ -61,7 +61,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </div>
         </section>
       </main>
-      <footer><span>cleanupcheck</span><span>HTTP response body checks</span></footer>
+      <footer><span>seal-go</span><span>HTTP response body checks</span></footer>
     </div>
   </div>
 `;
@@ -81,7 +81,7 @@ themeButtons.forEach(button => {
     if (next !== 'dark' && next !== 'light') return;
     applyTheme(next);
     try {
-      localStorage.setItem('cleanupcheck.theme', next);
+      localStorage.setItem('seal-go.theme', next);
     } catch {
       // Keep the selected appearance for this session.
     }

@@ -9,10 +9,10 @@ import (
 	"sort"
 	"strings"
 
-	"cleanupcheck/analyzer"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
+	"seal-go/analyzer"
 )
 
 type Finding struct {
@@ -104,7 +104,7 @@ func (a *App) AnalyzeProject(path string) ([]Finding, error) {
 		if readErr != nil {
 			return nil, fmt.Errorf("cannot read selected Go file: %w", readErr)
 		}
-		tempDir, tempErr := os.MkdirTemp("", "cleanupcheck-")
+		tempDir, tempErr := os.MkdirTemp("", "seal-go-")
 		if tempErr != nil {
 			return nil, fmt.Errorf("cannot prepare selected Go file: %w", tempErr)
 		}

@@ -1,4 +1,4 @@
-module cleanupcheck
+module seal-go
 
 go 1.27.0
 

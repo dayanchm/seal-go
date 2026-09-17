@@ -3,9 +3,9 @@ module desktop
 go 1.27.0
 
 require (
-	cleanupcheck v0.0.0
 	github.com/wailsapp/wails/v2 v2.15.0
 	golang.org/x/tools v0.49.0
+	seal-go v0.0.0
 )
 
 require (
@@ -41,6 +41,6 @@ require (
 	golang.org/x/text v0.41.0 // indirect
 )
 
-replace cleanupcheck => ..
+replace seal-go => ..
 
 // replace github.com/wailsapp/wails/v2 v2.15.0 => /Users/macmini/go/pkg/mod
