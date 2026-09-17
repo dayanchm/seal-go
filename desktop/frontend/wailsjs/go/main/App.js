@@ -9,3 +9,7 @@ export function AnalyzeProject(arg1) {
 export function SelectFolder() {
   return window['go']['main']['App']['SelectFolder']();
 }
+
+export function SelectGoFile() {
+  return window['go']['main']['App']['SelectGoFile']();
+}
