@@ -22,6 +22,10 @@ type Tracker struct {
 	resources map[uint64]Resource
 }
 
+func (t *Tracker) Unregister(id uint64) {
+	panic("unimplemented")
+}
+
 func (t *Tracker) Track(s string) any {
 	panic("unimplemented")
 }

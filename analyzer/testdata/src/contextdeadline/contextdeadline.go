@@ -35,7 +35,7 @@ func returnedCancellation(parent context.Context) (context.Context, context.Canc
 }
 
 func anotherConstructor(parent context.Context) {
-	_, _ = context.WithTimeout(parent, time.Second) // want
+	_, _ = context.WithTimeout(parent, time.Second) // want "context.WithTimeout cancellation function is discarded"
 }
 
 func unrelatedPair() (int, int) {
